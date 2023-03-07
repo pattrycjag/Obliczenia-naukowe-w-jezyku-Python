@@ -78,9 +78,9 @@ print("Words sorted by length:", len_sorted_words)
 
  # EXERCISE 2.6 (TUPLE) Find and explain the results.
 # t = (2, 4)   -->tworzenie tupli z dwoma liczbami 2 i 4
-#  print(t[2])  --> pokaz trzeci wyraz tablicy t (nie istnieje)
+#  print(t[2])  --> pokaż trzeci wyraz tupli t - nie istnieje (Error)
 #  t.append(6)  -->
-#  a, b = t ; print(a, b)
+#  a, b = t ; print(a, b)  -->
 
  # EXERCISE 2.7 (DICT) Create a dict for conversion of roman numerals (I, IV, V, IX, X, XL, L, XC, C, CD, D, CM, M) to arabic numbers. Use different methods.
 print("Ex.2.7")
