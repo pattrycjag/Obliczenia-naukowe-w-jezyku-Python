@@ -49,6 +49,24 @@ print("{:<3} {:<20} {:^6} {:>10}".format("No", "Element", "Symbol", "Weight"))
 print("-" * 40)
 for element in pt:
     print("{:<3} {:<20} {:^6} {:>10}".format(element[0], element[1], element[2], element[3]))
+    
+from prettytable import PrettyTable  
+
+x = PrettyTable()
+x.field_names = ["No", "Element", "Symbol", "Weight"]
+x.add_rows(
+    [(1, "Hydrogen", "H", 1),
+     (2, "Helium", "He", 4),
+     (3, "Lithium", "Li", 7),
+     (4, "Beryllium", "Be", 9),
+     (5, "Boron", "B", 11),
+     (6, "Carbon", "C", 12),
+     (7, "Nitrogen", "N", 14),
+     (8, "Oxygen", "O", 16),
+     (9, "Fluorine", "F", 19),
+     (10, "Neon", "Ne", 20)]
+)
+print(x)
 
  # EXERCISE 2.5 (LIST)
  # Let S be a long string (many lines).
