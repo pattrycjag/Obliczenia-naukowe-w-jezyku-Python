@@ -9,10 +9,10 @@ print("Number of zeros: ", zero_count)
 # EXERCISE 2.2 (BOOL)
 print("Ex.2.2")
 # x = 5 --> przypisanie zmiennej x wartości 5.
-# x == 5 i 3 # 3 --> Wyrażenie logiczne x == 5 jest prawdziwe (ponieważ x ma wartość 5), a następnie wyrażenie 3 jest wykonywane i zwraca wartość 3.
-# x == 4 i 3 # Fałsz --> Wyrażenie logiczne x == 4 jest fałszywe (ponieważ x ma wartość 5), więc całe wyrażenie jest fałszywe.
-# 3 i x == 5 # Prawda --> Wyrażenie 3 jest prawdziwe, a wyrażenie logiczne x == 5 również jest prawdziwe, więc całe wyrażenie jest prawdziwe.
-# 3 i x == 4 # Fałsz --> Wyrażenie 3 jest prawdziwe, ale wyrażenie logiczne x == 4 jest fałszywe, więc całe wyrażenie jest fałszywe.
+# x == 5 and 3 # 3 --> Wyrażenie logiczne x == 5 jest prawdziwe (ponieważ x ma wartość 5), a następnie wyrażenie 3 jest wykonywane i zwraca wartość 3.
+# x == 4 and 3 # Fałsz --> Wyrażenie logiczne x == 4 jest fałszywe (ponieważ x ma wartość 5), więc całe wyrażenie jest fałszywe.
+# 3 and x == 5 # Prawda --> Wyrażenie 3 jest prawdziwe, a wyrażenie logiczne x == 5 również jest prawdziwe, więc całe wyrażenie jest prawdziwe.
+# 3 and x == 4 # Fałsz --> Wyrażenie 3 jest prawdziwe, ale wyrażenie logiczne x == 4 jest fałszywe, więc całe wyrażenie jest fałszywe.
 x=isinstance(True, int) #--> Sprawdzamy, czy obiekt True jest instancją klasy int. Ponieważ wartość logiczna True jest równa 1, która jest typu int, więc wynik będzie True.
 y=isinstance(True, bool) #--> Sprawdzamy, czy obiekt True jest instancją klasy bool. Ponieważ wartość logiczna True jest typu bool, wynik będzie True.
 print(x,y)
@@ -77,10 +77,10 @@ len_sorted_words = sorted(words, key=len)
 print("Words sorted by length:", len_sorted_words)
 
  # EXERCISE 2.6 (TUPLE) Find and explain the results.
-# t = (2, 4)   -->tworzenie tupli z dwoma liczbami 2 i 4
-#  print(t[2])  --> pokaż trzeci wyraz tupli t - nie istnieje (Error)
-#  t.append(6)  -->
-#  a, b = t ; print(a, b)  -->
+# t = (2, 4)   -->tworzenie krotki (niemutowalnej) z dwoma liczbami 2 i 4
+#  print(t[2])  --> nie istnieje, poza zakresem - IndexError
+#  t.append(6)  --> krotki są niemutowalne, nie da się dodać liczby do nich, AttributeError
+#  a, b = t ; print(a, b) --> a=2, b=4 więc wyświetli 2 4
 
  # EXERCISE 2.7 (DICT) Create a dict for conversion of roman numerals (I, IV, V, IX, X, XL, L, XC, C, CD, D, CM, M) to arabic numbers. Use different methods.
 print("Ex.2.7")
@@ -97,4 +97,3 @@ def roman_to_arabic(roman_numeral):
 roman_numeral = 'XVIII'
 arabic_numeral = roman_to_arabic(roman_numeral)
 print("Roman numeral:", roman_numeral, "Arabic numeral:", arabic_numeral)
-
