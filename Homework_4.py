@@ -36,3 +36,21 @@ for p in sort_by_sum:
     print(p)
 
 print("Ex.4.2")
+
+def reverse_range_iterative(L, left, right):
+    while left < right:
+        L[left], L[right] = L[right], L[left]
+        left += 1
+        right -= 1
+
+def reverse_range_recursive(L, left, right):
+    if left >= right:
+        return
+    L[left], L[right] = L[right], L[left]
+    reverse_range_recursive(L, left+1, right-1)
+
+L = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+reverse_range_iterative(L, 3, 6)
+print(L)
+reverse_range_recursive(L, 2, 7)
+print(L)
