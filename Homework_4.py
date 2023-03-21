@@ -54,3 +54,23 @@ reverse_range_iterative(L, 3, 6)
 print(L)
 reverse_range_recursive(L, 2, 7)
 print(L)
+
+print("Ex.4.3")
+
+def iter_even():
+    i = 0
+    while True:
+        yield i
+        i += 2
+
+def iter_odd():
+    i = 1
+    while True:
+        yield i
+        i += 2
+
+def iter_power(k):
+    i = 1
+    while True:
+        yield i
+        i *= k
