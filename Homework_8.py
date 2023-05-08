@@ -4,18 +4,21 @@ import numpy as np
 print("Ex.8.1")
 
 print("Ex.8.1 a)")
-array_a = np.arange(0.0, 1.1, 0.1)
-print(array_a)
+array1 = np.linspace(0.0, 1.0, 11)
+print(array1)
 
 print("\nEx.8.1 b)")
-array_b = np.zeros((5, 6), dtype=np.int8)
-print(array_b)
+array2= np.zeros((5, 6), dtype=np.int8)
+print(array2)
 
 print("\nEx.8.1 c)")
 x = complex(0, 1)
-powers_of_x = np.power(x, np.arange(9))
-array_c = np.array(powers_of_x)
-print(array_c)
+powers_of_x1 = np.power(x, np.arange(9))
+array3 = np.array(powers_of_x1)
+print(array3)
+
+powers_of_x2 = np.array([x**i for i in range(9)], dtype=np.complex128)
+print(powers_of_x2)
 
 print("\nEx.8.2")
 print("Ex.8.2 a)")
@@ -32,12 +35,11 @@ print(v3)
 
 print("\nEx.8.3")
 print("Ex.8.3 a)")
-import numpy as np
 
-m1 = np.array([[1, 2, 3, 4, 5],
-               [6, 7, 8, 9, 10],
-               [11, 12, 13, 14, 15],
-               [16, 17, 18, 19, 20]])
+m1 = np.array([[7, 2, 9, 0, 5],
+               [98, 17, 81, 91, 10],
+               [111, 121, 7, 14, 1],
+               [16, 90, 1, 9, 2]])
 print(m1)
 
 
