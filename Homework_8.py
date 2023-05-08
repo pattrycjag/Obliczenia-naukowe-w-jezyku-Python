@@ -55,6 +55,10 @@ print("\nEx.8.3 d)")
 m4 = m1[1:-1, 1:-1]
 print(m4)
 
+m5 = np.delete(m1, [0, m1.shape[0] - 1], axis=0)
+m5 = np.delete(m5, [0, m5.shape[1] - 1], axis=1)
+print(m5)
+
 
 
 
