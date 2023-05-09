@@ -15,5 +15,6 @@ plt.xlabel('x')
 plt.ylabel('y')
 plt.title('Functions: sinx, cosx, exp(-x)')
 plt.legend()
-
 plt.show()
+
+print("Ex.9.2")
