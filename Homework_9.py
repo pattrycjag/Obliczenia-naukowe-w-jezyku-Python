@@ -13,7 +13,7 @@ plt.plot(x, y3, color='blue', linestyle='dotted', label='exp(-x)')
 
 plt.xlabel('x')
 plt.ylabel('y')
-plt.title('Functions: sinx, cosx, exp(-x)')
+plt.title('9.1: Functions: sinx, cosx, exp(-x)')
 plt.legend()
 plt.show()
 
@@ -39,7 +39,7 @@ plt.xlim(0, 1)
 plt.ylim(0, 1)
 plt.xlabel('x')
 plt.ylabel('y')
-plt.title('Random Points')
+plt.title('9.2: Random Points')
 plt.grid(True)
 
 plt.show()
