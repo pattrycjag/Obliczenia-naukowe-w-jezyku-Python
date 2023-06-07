@@ -1,7 +1,7 @@
 import unittest
 import math
 
-print("Ex.12.1")
+### Ex.12.1
 
 class Vector:
     def __init__(self, x, y, z):
@@ -88,3 +88,16 @@ class VectorTest(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+    
+### Ex.12.2
+import networkx as nx
+import matplotlib.pyplot as plt
+
+G = nx.gnm_random_graph(10, 15)
+
+pos = nx.spring_layout(G)
+nx.draw(G, pos, with_labels=True, node_color="pink", edge_color="black")
+
+plt.savefig("graph.png")
+plt.show()
